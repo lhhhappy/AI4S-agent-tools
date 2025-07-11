@@ -79,15 +79,15 @@
       "path": "servers/DPACalculator",
       "start_command": "cd servers/DPACalculator && python server.py --port <PORT>",
       "tools": [
-        "build_bulk_structure",
-        "optimize_crystal_structure",
-        "calculate_phonon",
-        "build_surface_interface",
         "run_molecular_dynamics",
-        "build_surface_slab",
-        "calculate_elastic_constants",
+        "build_bulk_structure",
+        "calculate_phonon",
         "build_molecule_structure",
+        "build_surface_slab",
         "run_neb",
+        "calculate_elastic_constants",
+        "optimize_crystal_structure",
+        "build_surface_interface",
         "build_surface_adsorbate"
       ]
     },
@@ -99,9 +99,9 @@
       "path": "servers/thermoelectric",
       "start_command": "cd servers/thermoelectric && python server.py --port <PORT>",
       "tools": [
-        "predict_thermoelectric_properties",
         "generate_calypso_structure",
         "screen_thermoelectric_candidate",
+        "predict_thermoelectric_properties",
         "calculate_enthalpy"
       ]
     },
@@ -124,8 +124,8 @@
       "path": "servers/pubchem",
       "start_command": "cd servers/pubchem && python server.py --port <PORT>",
       "tools": [
-        "download_structure",
-        "get_pubchem_data"
+        "get_pubchem_data",
+        "download_structure"
       ]
     },
     {
@@ -136,8 +136,8 @@
       "path": "servers/Paper_Search",
       "start_command": "cd servers/Paper_Search && python server.py --port <PORT>",
       "tools": [
-        "extract_info",
-        "search_papers"
+        "search_papers",
+        "extract_info"
       ]
     }
   ]
